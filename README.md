@@ -6,5 +6,6 @@ The script is modified by https://github.com/MattReidArnold .
 
 The official script is not yet modified and PR request is still not merged. So, i created this repo.
 
-How to use these script?(In Draft Version Currently, soon to be published)
-Follow this blog i created in medium. https://medium.com/p/a82a4b52f602/
+How to use these script?
+Follow this blog i created in medium. 
+https://medium.com/@iampujan/exporting-collections-and-subcollections-from-firestore-to-bigquery-a82a4b52f602?sk=6c631fc7cebefb5e8eca9c1616e34365
