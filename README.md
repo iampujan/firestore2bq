@@ -6,5 +6,5 @@ The script is modified by https://github.com/MattReidArnold .
 
 The official script is not yet modified and PR request is still not merged. So, i created this repo.
 
-How to use these script?
+How to use these script?(In Draft Version Currently, soon to be published)
 Follow this blog i created in medium. https://medium.com/p/a82a4b52f602/
