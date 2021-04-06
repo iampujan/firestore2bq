@@ -266,24 +266,25 @@ const run = async (): Promise<number> => {
 
 async function parseConfig(): Promise<CliConfig> {
   program.parse(process.argv);
+  const options = program.opts();
   if (program.nonInteractive) {
     if (
-      program.project === undefined ||
-      program.sourceCollectionPath === undefined ||
-      program.dataset === undefined ||
-      program.tableNamePrefix === undefined ||
-      program.batchSize === undefined ||
-      !validateBatchSize(program.batchSize)
+      options.project === undefined ||
+      options.sourceCollectionPath === undefined ||
+      options.dataset === undefined ||
+      options.tableNamePrefix === undefined ||
+      options.batchSize === undefined ||
+      !validateBatchSize(options.batchSize)
     ) {
-      program.outputHelp();
+      options.outputHelp();
       process.exit(1);
     }
     return {
-      projectId: program.project,
-      sourceCollectionPath: program.sourceCollectionPath,
-      datasetId: program.dataset,
-      tableId: program.tableNamePrefix,
-      batchSize: program.batchSize,
+      projectId: options.project,
+      sourceCollectionPath: options.sourceCollectionPath,
+      datasetId: options.dataset,
+      tableId: options.tableNamePrefix,
+      batchSize: options.batchSize,
     };
   }
   const {
